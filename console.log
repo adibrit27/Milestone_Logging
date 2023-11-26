@@ -1,29 +1,8 @@
-14:17:41.062 [main] DEBUG EdgeTable - EdgeTable constructor called with name: SampleTable
-14:17:41.064 [main] DEBUG EdgeTable - Setting name to: UpdatedTableName
-14:17:41.064 [main] DEBUG EdgeTable - Getting name: UpdatedTableName
-14:17:41.064 [main] INFO  RunEdgeConvert - EdgeTable Name: UpdatedTableName
-14:17:41.064 [main] DEBUG EdgeField - EdgeField constructor called with name: SampleField
-14:17:41.064 [main] DEBUG EdgeField - Setting name to: UpdatedFieldName
-14:17:41.064 [main] DEBUG EdgeField - Getting name: UpdatedFieldName
-14:17:41.064 [main] INFO  RunEdgeConvert - EdgeField Name: UpdatedFieldName
-14:17:41.064 [main] DEBUG EdgeConvertGUI - EdgeConvertGUI constructor called.
-14:17:41.064 [main] INFO  EdgeConvertGUI - Executing someMethod in EdgeConvertGUI
-14:17:41.065 [main] DEBUG EdgeConvertFileParser - EdgeConvertFileParser constructor called.
-14:17:41.065 [main] INFO  EdgeConvertFileParser - Parsing file: /Users/khoiruladib/Documents/RIT/AplicationDev/Kelompok/Log/src/main/java/Courses.edg
-14:17:41.065 [main] INFO  EdgeConvertFileParser - Parsed data saved to file: parsed_data.txt
-14:17:41.065 [main] INFO  EdgeConvertFileParser - File parsing completed successfully.
-14:17:41.065 [main] DEBUG EdgeConvertCreateDDL - EdgeConvertCreateDDL constructor called.
-14:17:41.065 [main] INFO  EdgeConvertCreateDDL - Generating DDL...
-14:17:41.066 [main] INFO  EdgeConvertCreateDDL - Generated DDL saved to file: generated_ddl.sql
-14:17:41.066 [main] INFO  EdgeConvertCreateDDL - DDL generation completed successfully.
-14:17:41.066 [main] DEBUG EdgeConnector - EdgeConnector constructor called.
-14:17:41.066 [main] INFO  EdgeConnector - Executing someMethod in EdgeConnector
-14:17:41.066 [main] DEBUG CreateDDLMySQL - CreateDDLMySQL constructor called.
-14:17:41.066 [main] INFO  CreateDDLMySQL - Generating MySQL DDL...
-14:17:41.066 [main] INFO  CreateDDLMySQL - Generated MySQL DDL saved to file: generated_mysql_ddl.sql
-14:17:41.066 [main] INFO  CreateDDLMySQL - MySQL DDL generation completed successfully.
-14:17:41.067 [main] INFO  RunEdgeConvert - Running...
-14:17:41.067 [main] INFO  RunEdgeConvert - RunEdgeConvert completed successfully.
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :run
 14:23:10.413 [main] DEBUG EdgeTable - EdgeTable constructor called with name: SampleTable
 14:23:10.414 [main] DEBUG EdgeTable - Setting name to: UpdatedTableName
 14:23:10.414 [main] DEBUG EdgeTable - Getting name: UpdatedTableName
@@ -50,3 +29,6 @@
 14:23:10.419 [main] INFO  CreateDDLMySQL - MySQL DDL generation completed successfully.
 14:23:10.419 [main] INFO  RunEdgeConvert - Running...
 14:23:10.419 [main] INFO  RunEdgeConvert - RunEdgeConvert completed successfully.
+
+BUILD SUCCESSFUL in 849ms
+3 actionable tasks: 1 executed, 2 up-to-date
