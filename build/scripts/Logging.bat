@@ -17,7 +17,7 @@
 @if "%DEBUG%"=="" @echo off
 @rem ##########################################################################
 @rem
-@rem  Log startup script for Windows
+@rem  Logging startup script for Windows
 @rem
 @rem ##########################################################################
 
@@ -33,7 +33,7 @@ set APP_HOME=%DIRNAME%..
 @rem Resolve any "." and ".." in APP_HOME to make it shorter.
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
-@rem Add default JVM options here. You can also use JAVA_OPTS and LOG_OPTS to pass JVM options to this script.
+@rem Add default JVM options here. You can also use JAVA_OPTS and LOGGING_OPTS to pass JVM options to this script.
 set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
@@ -68,22 +68,22 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\Log-1.0-SNAPSHOT.jar;%APP_HOME%\lib\log4j-core-2.13.3.jar;%APP_HOME%\lib\log4j-api-2.13.3.jar
+set CLASSPATH=%APP_HOME%\lib\Logging-1.0-SNAPSHOT.jar;%APP_HOME%\lib\log4j-core-2.13.3.jar;%APP_HOME%\lib\log4j-api-2.13.3.jar
 
 
-@rem Execute Log
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %LOG_OPTS%  -classpath "%CLASSPATH%" RunEdgeConvert %*
+@rem Execute Logging
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %LOGGING_OPTS%  -classpath "%CLASSPATH%" RunEdgeConvert %*
 
 :end
 @rem End local scope for the variables with windows NT shell
 if %ERRORLEVEL% equ 0 goto mainEnd
 
 :fail
-rem Set variable LOG_EXIT_CONSOLE if you need the _script_ return code instead of
+rem Set variable LOGGING_EXIT_CONSOLE if you need the _script_ return code instead of
 rem the _cmd.exe /c_ return code!
 set EXIT_CODE=%ERRORLEVEL%
 if %EXIT_CODE% equ 0 set EXIT_CODE=1
-if not ""=="%LOG_EXIT_CONSOLE%" exit %EXIT_CODE%
+if not ""=="%LOGGING_EXIT_CONSOLE%" exit %EXIT_CODE%
 exit /b %EXIT_CODE%
 
 :mainEnd
